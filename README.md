@@ -103,5 +103,5 @@ function appendNumber(number) {
     }
   }
 ```
-
+## Demo
 click [here](https://jashan201.github.io/code-to-calculator/) to test the application
