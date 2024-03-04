@@ -28,23 +28,14 @@ we will make the structure in a ```table``` like this:
     </tbody>
 </table>
 ```
+same for other rows of buttons
 repeat this to compleate all the buttons of calculator
 
 ## CSS 
 
 to make the calculator look better, we will add some basic ```css``` code:
 ```css
-p {
-    background-color: rgb(219, 220, 220);
-    border: 1px solid rgb(27, 27, 27);
-    margin-top: 50px;
-    width: 190px;
-    height: 35px;
-    font-size: 28px;
-    font-weight: 600;
-    text-align: end;
-    padding-top: 5px;
-}
+/* style every button according to your choice while keeping the same details */
 
 button {
     width: 40px;
@@ -69,29 +60,21 @@ function appendNumber(number) {
     currentInput += number;
     updateDisplay();
   }
-
   // same for other related functions
 
+
+  // function to clear the display
   function clearDisplay() {
     currentInput = '';
     updateDisplay();
   }
 
-  function toggleSign() {
-    if (currentInput !== '' && currentInput !== '0') {
-      currentInput = currentInput.startsWith('-') ? currentInput.slice(1) : '-' + currentInput;
-      updateDisplay();
-    }
-  }
+  // need togle function for brackets ()
 
-  function calculatePercentage() {
-    // Assuming percentage is calculated on the last number
-    const lastNumber = currentInput.split(/[\+\-\*\/]/).pop();
-    const percentage = parseFloat(lastNumber) / 100;
-    currentInput = currentInput.replace(/[\d\.]+$/, percentage);
-    updateDisplay();
-  }
+  // next, a function for calculating percentage
 
+
+  // and finally for the result:
   function calculateResult() {
     try {
       const result = eval(currentInput);
