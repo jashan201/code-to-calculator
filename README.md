@@ -104,4 +104,4 @@ function appendNumber(number) {
   }
 ```
 
-click [here]
+click [here](https://jashan201.github.io/code-to-calculator/) to test the application
