@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <meta name="author"content="Jashanpreet">
+    <meta name="description"content="INTRO TO CSS">
+    <meta name="keyword" content="web,html,css,java,phyton">
+    <title>intro to BOM</title>
+    <link rel="stylesheet" href="./assets/style/index.css" media="all">
+    <script src="./assets/script/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+              <h2>Calculator</h2>
+              <div class="output">
+                <p id="result"></p>
+              </div>
+                <table>
+                    <tbody>
+                    <tr>
+                      <td><button class="light" onclick="clearDisplay()">C</button></td>
+                      <td><button class="light" onclick="toggleSign()">-/+</button></td>
+                      <td><button class="light" onclick="calculatePercentage()">%</button></td>
+                      <td><button class="dark" onclick="appendOperator('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="normal" onclick="appendNumber('7')">7</button></td>
+                        <td><button class="normal" onclick="appendNumber('8')">8</button></td>
+                        <td><button class="normal" onclick="appendNumber('9')">9</button></td>
+                        <td><button class="dark" onclick="appendOperator('*')">X</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="normal" onclick="appendNumber('4')">4</button></td>
+                        <td><button class="normal" onclick="appendNumber('5')">5</button></td>
+                        <td><button class="normal" onclick="appendNumber('6')">6</button></td>
+                        <td><button class="dark" onclick="appendOperator('-')">-</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="normal" onclick="appendNumber('1')">1</button></td>
+                        <td><button class="normal" onclick="appendNumber('2')">2</button></td>
+                        <td><button class="normal" onclick="appendNumber('3')">3</button></td>
+                        <td><button class="dark" onclick="appendOperator('+')">+</button></td>
+                      </tr>
+                      <tr>
+                        <td><button class="bracket" onclick="appendOperator('()')">()</button></td>
+                        <td><button class="zero" onclick="appendNumber('0')">0</button></td>
+                        <td><button class="point" onclick="appendDecimal('.')">.</button></td>
+                        <td><button class="dark" onclick="calculateResult('=')">=</button></td>
+                      </tr>
+                      </tbody>
+                </table>
+        </div>
+    </main>
+</body>
+</html>
